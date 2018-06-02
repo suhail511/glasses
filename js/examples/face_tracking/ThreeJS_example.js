@@ -14,7 +14,7 @@
 			t3d.removeAll();
 			t3d.loadOcclusionHead("assets/brfv4_occlusion_head.json", numFacesToTrack);
 			// if(objectNumber == 1)
-				t3d.loadModel("assets/aviator001.json", numFacesToTrack);
+				t3d.loadModel("assets/brfv4_model.json", numFacesToTrack);
 			// else if(objectNumber == 2)
 			// 	t3d.loadModel("assets/brfv4_model02.json", numFacesToTrack);
 			// else
