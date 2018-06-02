@@ -2,7 +2,8 @@
 	"use strict";
 
 	var t3d = brfv4Example.drawing3d.t3d;
-	var numFacesToTrack = 1;
+	var numFacesToTrack = 2;
+	// var objectNumber = 1;
 
 	function loadModels() {
 
@@ -12,7 +13,12 @@
 
 			t3d.removeAll();
 			t3d.loadOcclusionHead("assets/brfv4_occlusion_head.json", numFacesToTrack);
-			t3d.loadModel("assets/brfv4_model.json", numFacesToTrack);
+			// if(objectNumber == 1)
+				t3d.loadModel("assets/aviator001.json", numFacesToTrack);
+			// else if(objectNumber == 2)
+			// 	t3d.loadModel("assets/brfv4_model02.json", numFacesToTrack);
+			// else
+			// 	t3d.loadModel("assets/brfv4_model03.json", numFacesToTrack);
 		}
 	}
 
@@ -54,7 +60,7 @@
 
 				// Draw the 68 facial feature points as reference.
 
-				draw.drawVertices(face.vertices, 2.0, false, 0x00a0ff, 0.4);
+				// draw.drawVertices(face.vertices, 2.0, false, 0x00a0ff, 0.4);
 
 				// Set the 3D model according to the tracked results.
 
@@ -65,8 +71,8 @@
 		if(t3d) { t3d.render(); }
 	};
 
-	brfv4Example.dom.updateCodeSnippet(exampleCode + "");
-
-	brfv4Example.dom.updateHeadline("BRFv4 - advanced - face_tracking - ThreeJS example.\n" +
-		"Tracks up to " + numFacesToTrack + " faces and puts glasses on them.");
+	// brfv4Example.dom.updateCodeSnippet(exampleCode + "");
+	//
+	// brfv4Example.dom.updateHeadline("BRFv4 - advanced - face_tracking - ThreeJS example.\n" +
+	// 	"Tracks up to " + numFacesToTrack + " faces and puts glasses on them.");
 })();

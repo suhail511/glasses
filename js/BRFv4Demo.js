@@ -69,34 +69,34 @@ brfv4Example.start = function() {
 
 		"https://webrtc.github.io/adapter/adapter-latest.js",	// webcam polyfill for older browsers
 
-		"js/libs/quicksettings/quicksettings.min.css",			// gui elements
-		"js/libs/quicksettings/quicksettings.js",
+		// "js/libs/quicksettings/quicksettings.min.css",			// gui elements
+		// "js/libs/quicksettings/quicksettings.js",
 
-		"js/libs/highlight/highlight_tomorrow.css",				// code highlighter
-		"js/libs/highlight/highlight.pack.js",
+		// "js/libs/highlight/highlight_tomorrow.css",				// code highlighter
+		// "js/libs/highlight/highlight.pack.js",
 
 		"js/libs/createjs/easeljs.min.js",						// canvas drawing lib
 		"js/libs/threejs/three.min.js",							// ThreeJS: a 3D engine
 
 		"js/utils/BRFv4DOMUtils.js",							// DOM handling
-		"js/utils/BRFv4Stats.js",								// FPS meter
+		// "js/utils/BRFv4Stats.js",								// FPS meter
 
 		"js/utils/BRFv4DrawingUtils_CreateJS.js",				// BRF result drawing
 		"js/utils/BRFv4Drawing3DUtils_ThreeJS.js",				// ThreeJS 3d object placement.
 
 		"js/utils/BRFv4SetupWebcam.js",							// webcam handling
-		"js/utils/BRFv4SetupPicture.js",						// picture/image handling
+		// "js/utils/BRFv4SetupPicture.js",						// picture/image handling
 		"js/utils/BRFv4SetupExample.js",						// overall example setup
 
 		"js/utils/BRFv4PointUtils.js",							// some calculation helpers
 
-		"js/utils/BRFv4SetupChooser.js",						// gui: choose either webcam or picture
-		"js/utils/BRFv4ExampleChooser.js",						// gui: choose an example
-		"js/utils/BRFv4DownloadChooser.js",						// gui: choose which package to download
+		// "js/utils/BRFv4SetupChooser.js",						// gui: choose either webcam or picture
+		// "js/utils/BRFv4ExampleChooser.js",						// gui: choose an example
+		// "js/utils/BRFv4DownloadChooser.js",						// gui: choose which package to download
 
 		// example to load on startup, others can be chosen via the example chooser GUI.
 
-		"js/examples/face_tracking/track_single_face.js"		// start with this example
+		"js/examples/face_tracking/ThreeJS_example.js"		// start with this example
 
 	], function() {
 

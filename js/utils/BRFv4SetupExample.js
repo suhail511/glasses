@@ -130,7 +130,7 @@
 
 			} else {
 
-				resolution.setTo(0, 0, 640, 480); // reset for webcam initialization
+				resolution.setTo(0, 0, window.innerWidth, window.innerHeight); // reset for webcam initialization
 				imageData.init();
 			}
 		}
